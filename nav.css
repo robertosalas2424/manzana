@@ -1,0 +1,99 @@
+nav {
+
+  /*
+  Display: Es una propiedad que determina como se muestra un elemento o si se muestra
+  Sus posibles valores son:
+
+  - Block: El elemento se muestra como un bloque, ocupando todo el ancho disponible y comenzando en una nueva linea.
+  - inline: El elemento se muestra en linea,ocupando el espacio necesario y permitiendo que otros elementos se muestren a su lado.
+  - inline block: El elemento se muestra en linea pero se comporta como un bloque, permitiendo establecer dimensiones y margenes.
+  - none: El elemento no se muestra en absoluto.
+  - flex: El elemento se muestra como un contenedor flexible,permitiendo organizar sus elementos hijos de manera flexible.
+  - Grid: El elemento se muestra como un contenedor de cuadricula,permitiendo organizar sus elementos hijos en filas y columnas.
+  - Hinden: El elemento se muestra pero no es visible,ocupando espacio en el diseño pero sin mostrar su contenido.
+  */ 
+display: flex;
+}
+
+nav #menu_desktop {
+  display: none;
+  /* Por defecto, cuando creas un elemento con display Flex, este se comporta como una fila
+En este caso, el menú de escritorio se oculta por defecto y solo se muestra en pantalla grande */
+  
+}
+
+nav #menu_mobile {
+    /* Por defecto, el menú de móvil se muestra por defecto
+       y solo se oculta en pantallas grandes */
+
+  display: flex;
+    /* justify-content es una propiedad que se utiliza en contenedores flex para
+       alinear los elementos hijos a lo largo del eje principal (horizontal por
+       defecto).
+       
+       Sus posibles valores son:
+       flex-start: Alinea los elementos al inicio del contenedor
+       flex-end: Alinea los elementos al final del contenedor
+       center: Alinea los elementos en el centro del contenedor
+       space-between: Distribuye los elementos con espacio entre ellos, dejando el
+       space-around: Distribuye los elementos con espacio alrededor de ellos, dejan
+       space-evenly: Distribuye los elementos con espacio igual entre ellos, incluyendo el espacio antes del primer elemento y después del último elemento 
+    */
+  justify-content:space-between;
+  padding: 12px,20px;
+      /*
+  Width: es una propiedad que establece el ancho de un elemento.
+  En este caso quiero que esté menú ocupe todo el ancho disponible, para que los elementos se distribuyan
+  correctamente */
+
+  width: 100%;
+  /* Al utilizar estamos seleccionando el elemento div que es un hijo directo de #menu_mobile
+   esto es importante porque si no, se aplicaría en todos los divs dentro de #menu_mobile, 
+   incluyendo los que están dentro del div que contiene el texto "buscar" */
+
+  
+  
+}
+
+nav #menu_mobile > div{
+  display: flex;
+  gap: 20px;
+}
+/* Media es una regla de css que se utiliza para aplicar estilos específicos a diferentes tamaños de pantalla
+ o dispositivos. Permíteme crear diseños responsivos que se adaptan a diferentes condiciones de visualización */
+
+ /* Los puntos de ruptura para las pantallas son:
+   Small devices (phones, 600px and down)
+   @media only screen and (max-width: 600px) {...}
+
+   Small devices (portrait tablets and large phones, 600px and up)
+   @media only screen and (min-width: 600px) {...}
+
+   Medium devices (landscape tablets, 768px and up)
+   @media only screen and (min-width: 768px) {...}
+
+   Large devices (laptops/desktops, 992px and up)
+   @media only screen and (min-width: 992px) {...}
+
+   Extra large devices (large laptops and desktops, 1200px and up)
+   @media only screen and (min-width: 1200px) {...}
+*/
+
+@media only screen and (min-width: 992px){
+  nav #menu_desktop {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+  padding: 12px 20px;
+  /* Por defecto, cuando creas un elemento con display Flex, este se comporta como una fila
+  En este caso, el menú de escritorio se oculta por defecto y solo se muestra en pantalla grande */
+  }
+
+  nav #menu_mobile {
+    /* Por defecto, el menú de móvil se muestra por defecto
+       y solo se oculta en pantallas grandes */
+
+  display: none;
+  }
+}
