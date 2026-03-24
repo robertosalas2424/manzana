@@ -172,7 +172,7 @@ header {
 }
 
 /* --- AJUSTES PARA MÓVIL (Pantallas pequeñas) --- */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 734px) {
     .header-content > h2,.section-content > h2 {
         font-size: 38px;
         margin-top: -13px;
@@ -188,7 +188,7 @@ header {
 
     .btn-video,.solo-movil{
   /* Estructura básica */
-  display: inline-flex;
+  display: none;
   align-items: center;
   position: absolute;
   margin-top: 250px;
@@ -349,7 +349,7 @@ div {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 734px) {
     .productos  {
   display: grid;
   grid-template-columns: repeat(1, 1fr) ;
@@ -386,10 +386,12 @@ margin-bottom: -20px;
 }
 
 
-/*.boton-info2 {
+.boton-info2 {
     display: inline-block;
-    background-color: #0071e3;
-    color: white;
+    background-color: #f0f2f5;
+    color: #0077ed;
+    border: 1px solid #0066cc;
+    
     padding: 12px 22px;
     padding-left: 25px;
     padding-right: 25px;
@@ -404,9 +406,11 @@ margin-bottom: -20px;
         
 }
 
-.boton-info2 :hover {
+.boton-info2:hover {
     background-color: #0077ed;
-}*/
+    color: white;
+    transition:  0.3s ease;
+}
 
 
 .subtitle {
@@ -416,7 +420,7 @@ margin-bottom: -20px;
 
 .MacBook-Air, .iPad-air, .Studio-Display, .Studio-Display-XDR, .WATCH-SERIES-11  {
     background-image: url("https://www.apple.com/v/home/cm/images/promos/macbook-air-m5/promo_macbook_air_m5_announce__cw0fby10dfsm_large.jpg");
-    background-position: center ;
+    background-position: center 10px ;
 background-repeat: no-repeat;
 background-size: cover;
 display: flex;
@@ -442,5 +446,12 @@ text-align: center;
 
 .WATCH-SERIES-11 {
     background-image: url("https://www.apple.com/la/home/promos/25_watch-series-11_09/images/promo_apple_watch_series_11__b63hxviqvonm_large.jpg");
-    height: 410px;
+}
+
+    @media screen and (max-width: 734px) {
+        .WATCH-SERIES-11 {
+    background-repeat: no-repeat;
+    background-position: center 120px ;
+    background-size: 150%;
+        }
 }
