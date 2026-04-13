@@ -1,4 +1,4 @@
-nav {
+nav{
 
   /*
   Display: Es una propiedad que determina como se muestra un elemento o si se muestra
@@ -13,14 +13,44 @@ nav {
   - Hinden: El elemento se muestra pero no es visible,ocupando espacio en el diseño pero sin mostrar su contenido.
   */ 
 display: flex;
+flex-direction: column;
+margin: 0 auto;
+padding: 0;
+width: 100%;
+max-width: 1300px;
+
+
 }
 
-nav #menu_desktop {
+
+
+nav #menu_desktop,#menu_dos,#menu_tres,#menu_four,#menu_six,.menu_final {
   display: none;
+  
   /* Por defecto, cuando creas un elemento con display Flex, este se comporta como una fila
 En este caso, el menú de escritorio se oculta por defecto y solo se muestra en pantalla grande */
   
 }
+
+nav .menu_movil {
+  
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+  width: 100%;
+  
+  
+  
+  
+  
+  
+}
+
+
 
 nav #menu_mobile {
     /* Por defecto, el menú de móvil se muestra por defecto
@@ -41,6 +71,7 @@ nav #menu_mobile {
     */
   justify-content:space-between;
   padding: 12px,20px;
+  
       /*
   Width: es una propiedad que establece el ancho de un elemento.
   En este caso quiero que esté menú ocupe todo el ancho disponible, para que los elementos se distribuyan
@@ -55,10 +86,202 @@ nav #menu_mobile {
   
 }
 
-nav #menu_mobile > div{
+
+
+nav #menu_mobile > div  {
   display: flex;
   gap: 20px;
+  
 }
+nav #texto_nota {
+  display: flex;
+  gap: 20px;
+  margin: 0 20px;
+  letter-spacing: 0.07em;
+  opacity: 0.8;
+  line-height: 1.3333733333;
+  transition: 0.3s ease;
+   color: #6e6e73;
+    font-size: 13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    justify-content:flex-start;
+    text-align:left;
+    max-width: 1500px;
+    padding: 20px 0;
+    margin-top: -10px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter:blur(10px);
+    
+}
+
+nav #text {
+  display: flex;
+  gap: 5px;
+  margin: 0 ;
+  letter-spacing: 0.07em;
+  opacity: 0.8;
+  line-height: 1.3333733333;
+  transition: 0.3s ease;
+   color: #6e6e73;
+    font-size: 13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    justify-content:flex-start;
+    text-align:left;
+    max-width: 1500px;
+    padding: 0 0;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    padding-left: 20px;
+    padding-top: 5px;
+    
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter:blur(10px);
+}
+
+nav .link {
+  color: #02021d;
+}
+
+nav .link_two {
+  color: #0077ed;
+  margin-left: 15px;
+  font-size: 13px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  margin-left: 20px;
+}
+
+nav #note {
+  display: flex;
+  gap: 20px;
+  margin: 0 20px;
+  letter-spacing: 0.07em;
+  opacity: 0.8;
+  line-height: 1.3333733333;
+  transition: 0.3s ease;
+   color: #6e6e73;
+    font-size: 13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    justify-content:flex-start;
+    text-align:left;
+    max-width: 1500px;
+    padding: 0px 0;
+    margin-top: -13px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter:blur(10px);
+    margin-left: 0;
+    padding-left: 20px;
+    padding-top: 10px;
+    overflow: hidden;
+}
+    
+  nav #menu_movil  p,nav .link_four,nav .link_one {
+  color: #02021d;
+  font-size: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  margin-left: 20px;
+  
+ 
+}
+
+nav .links,nav .raya,nav .raya_one,nav .link,nav .raya_twoo,nav .link_tree { 
+  color: #02021d;
+  font-size: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  margin-left: 5px;
+  padding-bottom: 25px;
+}  
+nav #text0 {
+   display: flex;
+  gap: 20px;
+  margin: 0 20px;
+  letter-spacing: 0.07em;
+  opacity: 0.8;
+  line-height: 1.3333733333;
+  transition: 0.3s ease;
+   color: #6e6e73;
+    font-size: 13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    justify-content:flex-start;
+    text-align:left;
+    margin-bottom: 10px;
+    padding: 0px 0;
+    margin-top: -13px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter:blur(10px);
+    margin-left: 0;
+    padding-left: 0px;
+    padding-top: 10px;
+    overflow: hidden;
+  
+}
+
+nav .copyright {
+  display: flex;
+  gap: 20px;
+  margin: 0 20px;
+  letter-spacing: 0.07em;
+  opacity: 0.8;
+  line-height: 1.3333733333;
+  transition: 0.3s ease;
+   color: #6e6e73;
+    font-size: 13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    justify-content:flex-start;
+    text-align:left;
+    max-width: 1500px;
+    padding: 0px 0;
+    margin-top: 0px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter:blur(10px);
+    margin-left: 0;
+    padding-left: 20px;
+    padding-top: 0px;
+    
+}
+
+nav .link_four:hover {
+text-decoration: underline;
+cursor: pointer;
+color: #02021d;
+}
+
+ nav .links:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #02021d;
+ }
+
+ nav .link_one:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #02021d;
+ }
+
+nav .link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #02021d;
+ }
+
+ nav .link_tree:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #02021d;
+ }
+
 /* Media es una regla de css que se utiliza para aplicar estilos específicos a diferentes tamaños de pantalla
  o dispositivos. Permíteme crear diseños responsivos que se adaptan a diferentes condiciones de visualización */
 
@@ -79,21 +302,304 @@ nav #menu_mobile > div{
    @media only screen and (min-width: 1200px) {...}
 */
 
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 734px){
   nav #menu_desktop {
   display: flex;
   width: 100%;
   justify-content: center;
   gap: 20px;
   padding: 12px 20px;
+  
   /* Por defecto, cuando creas un elemento con display Flex, este se comporta como una fila
   En este caso, el menú de escritorio se oculta por defecto y solo se muestra en pantalla grande */
   }
+  nav .not {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+  }
 
+  nav #texto_nota {
+  display: flex;
+  gap: 20px;
+  margin: 0 20px;
+  margin-left: 0px;
+  letter-spacing: 0.07em;
+  opacity: 0.8;
+  line-height: 1.3333733333;
+  transition: 0.3s ease;
+   color: #6e6e73;
+    font-size: 13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    justify-content:center;
+    text-align:left;
+    max-width: 1500px;
+
+    padding: 20px 0;
+    padding-top: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter:blur(10px);
+  }
+
+  nav #text {
+  display: flex;
+  gap: 20px;
+  margin: 0 20px ;
+  letter-spacing: 0.07em;
+  opacity: 0.8;
+  line-height: 1.3333733333;
+  transition: 0.3s ease;
+   color: #6e6e73;
+    font-size: 13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    justify-content:flex-start;
+    text-align:left;
+    overflow: hidden;
+    padding: 0 0;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    padding-left: 0px;
+    padding-top: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter:blur(10px);
+}
+
+nav .link {
+  color: #02021d;
+}
+nav .link_two {
+  color: #0077ed;
+  margin-left: 15px;
+  font-size: 13px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  
+}
+
+nav #note,#text0 {
+  display: flex;
+  gap: 20px;
+  margin: 0 20px;
+  letter-spacing: 0.07em;
+  opacity: 0.8;
+  line-height: 1.3333733333;
+  transition: 0.3s ease;
+   color: #6e6e73;
+    font-size: 13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    justify-content:flex-start;
+    text-align:left;
+    margin-bottom: 10px;
+    padding: 0px 0;
+    margin-top: -13px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter:blur(10px);
+    margin-left: 0;
+    padding-left: 0px;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+nav .menu_pc {
+  display: grid;
+  
+  grid-template-columns: repeat(4,1fr) ;
+  gap: 20px;
+  
+  
+  
+}
+
+nav #menu_dos,#menu_tres,#menu_four,#menu_six {
+   display: flex;
+  gap: 20px;
+  margin: 0 20px;
+  letter-spacing: 0.07em;
+  opacity: 0.8;
+  line-height: 1.3333733333;
+  transition: 0.3s ease;
+   color: #6e6e73;
+    font-size: 13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    justify-content:flex-start;
+    text-align:left;
+    flex-direction: column;
+    padding: 20px 0;
+    margin-top: -10px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter:blur(10px);
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 1500px;
+    
+    
+}
+
+nav #menu_dos p:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  color: #1d1d1f;
+}
+nav #menu_tres p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #1d1d1f;
+}
+nav #menu_four p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #1d1d1f;
+}
+nav #menu_six p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #1d1d1f;
+}
+
+nav #menu_dos h2,h3,#menu_tres h2,h3,#menu_four h2,#menu_six h2,h3 {
+  color: #02021d;
+  font-size: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+ 
+}
+
+nav .menu_final {
+  display: flex;
+
+  gap: 20px;
+  margin: 0 0px;
+  letter-spacing: 0.07em;
+  opacity: 0.8;
+  line-height: 1.3333733333;
+  transition: 0.3s ease;
+
+    font-size: 13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+  margin-left: 10px;
+  justify-content: flex-start;
+  padding: 20px 0;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  
+    
+    
+
+  
+
+}
+
+nav .copyright  {
+   display: flex;
+  gap: 20px;
+  margin: 0 20px;
+  letter-spacing: 0.07em;
+  opacity: 0.8;
+   
+  color: #6e6e73;
+  font-size: 13px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  margin-left: 0px;
+  margin-right: 20px;
+  margin-top: 0px;
+  justify-content: flex-start;
+  padding: 0;
+  margin-top: 10px;
+    
+
+}
+
+nav .menu_final  {
+   display: flex;
+  color: #02021d;
+  font-size: 13px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  
+}
+
+nav .menu_final .link_one:hover {
+ text-decoration: underline;
+ cursor: pointer;
+  color: #02021d;
+}
+
+nav .menu_final .link:hover {
+text-decoration: underline;
+cursor: pointer;
+color: #02021d;
+}
+
+nav .menu_final .link_tree:hover {
+text-decoration: underline;
+cursor: pointer;
+color: #02021d;
+}
+
+nav .menu_final .link_four:hover {
+text-decoration: underline;
+cursor: pointer;
+color: #02021d;
+}
+nav .menu_final .links:hover {
+  
+  text-decoration: underline;
+  cursor: pointer;
+  color: #02021d;
+  
+}
+nav .link,nav .link_one,nav .link_tree,nav .links {
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  
+  margin-left: -10px;
+  
+}
+
+nav .link_four {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  margin-left: 150px;
+  margin-top: 10px;
+  align-items: center;
+}
   nav #menu_mobile {
     /* Por defecto, el menú de móvil se muestra por defecto
        y solo se oculta en pantallas grandes */
 
   display: none;
   }
+
+ nav #menu_movil {
+  display: none;
+  
+ }
+
+nav .movil_final {
+  display: none;
+}
+ nav {
+  outline: 1px solid rgb(134, 60, 60);
+}
+
 }
